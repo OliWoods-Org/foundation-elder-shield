@@ -68,7 +68,7 @@ export const RecoveryStepSchema = z.object({
   agency: z.string().optional(),
   deadline: z.string().optional(),
   critical: z.boolean(),
-  completed: z.boolean().default(false),
+  completed: z.boolean().optional(),
   notes: z.string().optional(),
 });
 
